@@ -7,6 +7,52 @@
     box-sizing: border-box;
 }
 
+@keyframes fade{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-down{
+    0%{
+        opacity: 0%;
+        transform: translateY(-40px);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-left{
+    0%{
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-right{
+    0%{
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
 body{
     font-family: "Poppins", "sans-serif";
     background-color: rgba(234, 234, 234, 0.197);
@@ -30,6 +76,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 14vh;
+    animation: fade-down 0.7s 0.4s backwards;
 }
 
 .nav-links{
@@ -154,6 +201,7 @@ a:hover{
 #intro{
     width: 45%;
     margin-left: 100px;
+    animation: fade-left 0.7s;
 }
 
 .line-1{
@@ -210,6 +258,7 @@ a:hover{
 
 #main-image{
     margin-right: 100px;
+    animation: fade-right 0.7s;
 }
 
 #main-image img{
@@ -219,6 +268,7 @@ a:hover{
 #bottom-section{
     display: flex;
     justify-content: right;
+    animation: fade 0.7s 1.0s backwards;
 }
 
 .vertical{

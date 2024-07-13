@@ -241,6 +241,7 @@ a:hover{
 
 .btn{
     margin-top: 80px;
+    animation: fade 0.7s 1.0s backwards;
 }
 
 .btn button{

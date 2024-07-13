@@ -1,0 +1,124 @@
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+    }
+
+    #page-1{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 2rem;
+        margin-top: -6rem;
+    }
+
+    #intro{
+        margin: 0;
+        text-align: center;
+        width: 70%;
+    }
+
+    .line-1{
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .line-1 hr{
+        display: none;
+    }
+
+    #main-image{
+        margin: 0;
+        margin-top: 120px;
+    }
+
+    #main-image img{
+        height: 300px;
+    }
+
+    .btn{
+        margin-top: 0;
+    }
+
+    #bottom-section{
+        display: none;
+    }
+
+    #about{
+        height: fit-content;
+        padding-top: 2rem;
+    }
+
+    .content{
+        gap: 0;
+        flex-direction: column;
+    }
+
+    #about-pic img{
+        margin-top: 2rem;
+    }
+
+    .container-box{
+        flex-wrap: wrap;
+    }
+
+    .content-desc{
+        margin-bottom: 3rem;
+    }
+
+    #experience{
+        height: fit-content;
+        padding-top: 2rem;
+    }
+
+    #projects{
+        height: fit-content;
+        padding-top: 2rem;
+    }
+
+    #contact{
+        padding-top: 2rem;
+    }
+
+    .email, .linkedin{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .logo{
+        font-size: 1.6rem;
+    }
+
+    #main-image img{
+        height: 250px;
+    }
+
+    .line-2{
+        font-size: 2rem;
+    }
+
+    #about-pic img{
+        width: 180px;
+    }
+
+    .contact-details{
+        padding: 1rem;
+    }
+
+    #footer .nav-links{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .copyright{
+        font-size: 0.8rem;
+    }
+
+}

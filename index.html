@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Navida</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Navida</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#about" onclick="togglemenu()">About</a></li>
+                    <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div id="page-1">
+            <div id="intro">
+                <div class="line-1"><hr>HELLO</div>
+                <div class="line-2">I'm <span>Navida</span> Wimalaweera</div>
+                <div class="line-3">A software engineering student passionate about coding and committed to crafting innovative solutions for a better future.</div>
+                <div class="btn"><button>DOWNLOAD CV</button></div>
+            </div>
+            <div id="main-image">
+                <img src="profile-pic.png" alt="profile pic">
+            </div>
+        </div>
+        <div id="bottom-section">
+            <div class="vertical">
+                <div><a href="#about">SCROLL DOWN →</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="heading">
+            <div class="desc">Get To Know More</div>
+            <div class="title">About Me</div>
+        </div>
+
+        <div class="content">
+            <div id="about-pic">
+                <img src="peakpx (1).jpg" alt="pic">
+            </div>
+            <div class="content-details">
+                <div class="container-box">
+                    <div class="details">
+                        <img src="assets/experience.png" alt="pic">
+                        <div class="head">Experience</div>
+                        <div class="sub">
+                            <div>1+ years</div>
+                            <div>Software Development</div>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <img src="assets/education.png" alt="pic">
+                        <div class="head">Education</div>
+                        <div class="sub">
+                            <div>
+                                Pursuing</div>
+                            <div>a B.Sc. in Software Engineering</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat debitis quo fuga reprehenderit non hic, esse unde blanditiis, id at dolores temporibus quibusdam iusto eius vel voluptatem labore excepturi vitae! Omnis cumque iste, debitis voluptate quod numquam ipsam magni id!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div class="heading">
+            <div class="desc">Explore My</div>
+            <div class="title">Experience</div>
+        </div>
+        <div class="container-box">
+            <div class="details">
+                <div class="main-head">Web Development</div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">HTML</div>
+                        <div class="sub">Experienced</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">CSS</div>
+                        <div class="sub">Experienced</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">Javascript</div>
+                        <div class="sub">Basics</div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="main-head">Software Development</div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">Python</div>
+                        <div class="sub">Intermediate</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">Java</div>
+                        <div class="sub">Intermediate</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="assets/checkmark.png" alt="pic">
+                    <div class="section-details">
+                        <div class="head">Arduino</div>
+                        <div class="sub">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="heading">
+            <div class="desc">Browse My Recent</div>
+            <div class="title">Projects</div>
+        </div>
+        <div class="container-box">
+            <div class="details">
+                <div class="pic">
+                    <img src="arduino.png" alt="pic">
+                </div>
+                <div class="project-title">Arduino Timer Controlled Relay</div>
+                <div class="project-btn">
+                    <div><button onclick="redirectToPage1()">Github</button></div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="pic">
+                    <img src="arduino-1.png" alt="pic">
+                </div>
+                <div class="project-title">Simple Automated Room</div>
+                <div class="project-btn">
+                    <div><button onclick="redirectToPage2()">Github</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="heading">
+            <div class="desc">Get In Touch</div>
+            <div class="title">Contact Me</div>
+        </div>
+        
+        <div class="container-box">
+            <div class="contact-details">
+                <div class="email">
+                    <img src="assets/email.png" alt="email">
+                    <div><a href="mailto:navidawimalaweera@gmail.com">navidawimalaweera@gmail.com</a></div>
+                </div>
+                <div class="linkedin">
+                    <img src="assets/linkedin.png" alt="linkenin">
+                    <a href="https://www.linkedin.com/in/navida-wimalaweera-688b56281/">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; 2024 Navida Wimalaweera. All rights reserved</div>
+        </div>
+
+    </div>
+    <img src="assets/arrow.png" alt="arrow" id="arrow" onclick="topFunction()">
+
+    <script src="script.js"></script>
+</body>
+</html>
